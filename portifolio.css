@@ -1,0 +1,496 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Seção Sobre Mim */
+#sobre {
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -40px;
+}
+
+#sobre h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Seção Redes Sociais */
+#contatos {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contatos h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo dos ícones sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #3498db;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon.github {
+    background-color: #333;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+/* Estilo da seção de E-mail */
+#email {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#email h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.email-description {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #d14836;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.email-description:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+/* Estilo da seção de Formação Acadêmica */
+#formacao {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+}
+
+#formacao h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Quadros de Formação Acadêmica */
+.formacao-quadro {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.formacao-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%; /* Tamanho flexível com 45% da largura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formacao-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores diferentes para os quadros */
+.formacao-item.graducao {
+    background-color: #3498db; /* Azul */
+    color: white;
+}
+
+.formacao-item.tecnologo {
+    background-color: #e74c3c; /* Vermelho */
+    color: white;
+}
+
+/* Estilo da seção de Experiência Profissional */
+#experiencia {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#experiencia h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Quadros de Experiência Profissional */
+.experiencia-quadro {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.experiencia-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%; /* Tamanho flexível com 45% da largura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores diferentes para os quadros de Experiência Profissional */
+.experiencia-item.desenvolvedor {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+}
+
+.experiencia-item.estagiario {
+    background-color: #f39c12; /* Laranja */
+    color: white;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Seção Sobre Mim */
+#sobre {
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -40px;
+}
+
+#sobre h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#sobre p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Seção Redes Sociais */
+#contatos {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contatos h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo dos ícones sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: #3498db;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon.github {
+    background-color: #333;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+/* Estilo da seção de E-mail */
+#email {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#email h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.email-description {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #d14836;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.email-description:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+/* Estilo da seção de Formação Acadêmica */
+#formacao {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+}
+
+#formacao h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Quadros de Formação Acadêmica */
+.formacao-quadro {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.formacao-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%; /* Tamanho flexível com 45% da largura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formacao-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores diferentes para os quadros */
+.formacao-item.graducao {
+    background-color: #3498db; /* Azul */
+    color: white;
+}
+
+.formacao-item.tecnologo {
+    background-color: #e74c3c; /* Vermelho */
+    color: white;
+}
+
+/* Estilo da seção de Experiência Profissional */
+#experiencia {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+#experiencia h2 {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Quadros de Experiência Profissional */
+.experiencia-quadro {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.experiencia-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%; /* Tamanho flexível com 45% da largura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores diferentes para os quadros de Experiência Profissional */
+.experiencia-item.desenvolvedor {
+    background-color: #2ecc71; /* Verde */
+    color: white;
+}
+
+.experiencia-item.estagiario {
+    background-color: #f39c12; /* Laranja */
+    color: white;
+}
